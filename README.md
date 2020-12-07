@@ -8,16 +8,16 @@ Maven repostitory:
 
 ```xml
 <repository>
-  <id>jitpack.io</id>
-	<url>https://jitpack.io</url>
+    <id>www.jitpack.io</id>
+    <url>https://jitpack.io</url>
 </repository>
 ```
 Maven dependency:
 ```xml
 <dependency>
-  <groupId>com.github.sysdm-del</groupId>
-	 <artifactId>Repo</artifactId>
-	 <version>Tag</version>
+    <groupId>com.github.sysdm-del</groupId>
+    <artifactId>Repo</artifactId>
+    <version>Tag</version>
 </dependency>
 ```
 
