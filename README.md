@@ -19,7 +19,7 @@ Maven dependency:
 	 <artifactId>Repo</artifactId>
 	 <version>Tag</version>
 </dependency>
-
+```
 
 ### Usage
 
