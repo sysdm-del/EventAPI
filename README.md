@@ -2,6 +2,25 @@
 
 EventAPI is a Spigot / Bukkit API for minecraft plugin developers.
 
+### Installation
+
+Maven repostitory:
+
+```xml
+<repository>
+  <id>jitpack.io</id>
+	<url>https://jitpack.io</url>
+</repository>
+```
+Maven dependency:
+```xml
+<dependency>
+  <groupId>com.github.sysdm-del</groupId>
+	 <artifactId>Repo</artifactId>
+	 <version>Tag</version>
+</dependency>
+
+
 ### Usage
 
 Now, let's go through some basic usage.
