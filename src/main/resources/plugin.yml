@@ -1,0 +1,6 @@
+name: EventAPI
+version: ${project.version}
+main: me.sysdm.net.eventapi.EventAPI
+api-version: 1.16
+authors: [ sysdm ]
+description: An API for events.
