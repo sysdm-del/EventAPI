@@ -24,7 +24,7 @@ If you want to set the EventPriority or ignore when the event is cancelled, do t
 
 ```java
 Events.listen(PlayerJoinEvent.class)
-  .handler(e -> } //This will be our consumer in this case (a lambda statement where e is event), but you can also just put any regular consumer there instead of the statement.
+  .handler(e -> }
     e.setJoinMessage("Welcome " + e.getPlayer().getName() + " to the server!);
   }, EventPriority.LOW, false);
 
