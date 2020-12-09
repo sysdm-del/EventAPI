@@ -1,12 +1,12 @@
 package me.sysdm.net.eventapi.events;
 
 import lombok.Getter;
-import me.sysdm.net.eventapi.events.interfaces.EventExecutor;
 import me.sysdm.net.eventapi.events.other.PredicateConsumer;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Event;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
+import org.bukkit.plugin.EventExecutor;
 import org.bukkit.plugin.Plugin;
 
 import java.util.List;
@@ -46,12 +46,12 @@ public class EventSubscriber<T extends Event> implements Listener, EventExecutor
     }
 
     public void register() {
-        Bukkit.getPluginManager().registerEvent(eventType, this, priority, this::handler, plugin, ignoreCancelled);
+        Bukkit.getPluginManager().registerEvent(eventType, this, priority, this, plugin, ignoreCancelled);
     }
 
     @Override
     @SuppressWarnings("unchecked")
-    public void handler(Listener listener, Event event) {
+    public void execute(Listener listener, Event event) {
 
 
         if (event.getClass() != eventType) {
