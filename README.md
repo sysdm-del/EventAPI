@@ -48,6 +48,16 @@ Events.listen(PlayerJoinEvent.class)
   }, EventPriority.LOW, false);
 
 ```
+
+Oh, and one more thing. You can use `.filter()` to filter out something that you don't want. For example:
+```java
+Events.listen(PlayerJoinEvent.class)
+  .filter(e -> !e.getPlayer().hasPlayedBefore())
+  .handler(e -> }
+    e.setJoinMessage("Welcome " + e.getPlayer().getName() + " to the server!);
+  }, EventPriority.LOW, false);
+
+```
 This project was inspierd by Lucko's event helper, and Conclures EventBuilder.
 
 ## Contact
