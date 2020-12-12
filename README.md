@@ -52,6 +52,7 @@ This project was inspierd by Lucko's event helper, and Conclures EventBuilder.
 
 ## Contact
 Discord: sysdm#0001
+Development discord: https://discord.gg/Utk886Faqb
 
 ## Contributions
 This project is open for any pull requests that has reasonable changes.
