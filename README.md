@@ -35,7 +35,7 @@ That will listen to the event, but it won't do anything! To make it do stuff whe
 ```java
 Events.listen(PlayerJoinEvent.class)
   .handler(e -> } //This will be our consumer in this case (a lambda statement where e is event), but you can also just put any regular consumer there instead of the statement.
-    e.setJoinMessage("Welcome " + e.getPlayer().getName() + " to the server!);
+    e.setJoinMessage("Welcome " + e.getPlayer().getName() + " to the server!");
   });
 ```
 
@@ -44,7 +44,7 @@ If you want to set the EventPriority or ignore when the event is cancelled, do t
 ```java
 Events.listen(PlayerJoinEvent.class)
   .handler(e -> }
-    e.setJoinMessage("Welcome " + e.getPlayer().getName() + " to the server!);
+    e.setJoinMessage("Welcome " + e.getPlayer().getName() + " to the server!");
   }, EventPriority.LOW, false);
 
 ```
@@ -54,7 +54,7 @@ Oh, and one more thing. You can use `.filter()` to filter out something that you
 Events.listen(PlayerJoinEvent.class)
   .filter(e -> !e.getPlayer().hasPlayedBefore())
   .handler(e -> }
-    e.setJoinMessage("Welcome " + e.getPlayer().getName() + " to the server!);
+    e.setJoinMessage("Welcome " + e.getPlayer().getName() + " to the server!");
   }, EventPriority.LOW, false);
 
 ```
