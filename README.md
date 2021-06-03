@@ -17,7 +17,7 @@ Maven dependency:
 <dependency>
     <groupId>com.github.sysdm-del</groupId>
     <artifactId>EventAPI</artifactId>
-    <version>1.1</version>
+    <version>1.0</version>
 </dependency>
 ```
 
